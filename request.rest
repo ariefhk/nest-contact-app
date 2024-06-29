@@ -41,3 +41,42 @@ DELETE   http://localhost:3000/api/users/current
 Content-Type: application/json
 Authorization: Bearer ae8a28b8-557a-496e-bfd2-367935faab8b
 
+
+
+
+################## CONTACT ##################
+
+###
+POST http://localhost:3000/api/contacts
+Content-Type: application/json
+Authorization: Bearer 5670281c-09be-41de-81a1-52eba8d3d869
+
+{
+"username": "admin",
+"first_name":"Admin",
+"last_name":"Lastname",
+"email":"admin@gmail.com",
+"phone":"08123456789"
+}
+
+
+###
+GET http://localhost:3000/api/contacts/1
+Content-Type: application/json
+Authorization: Bearer 5670281c-09be-41de-81a1-52eba8d3d869
+
+
+###
+PUT  http://localhost:3000/api/contacts/1
+Content-Type: application/json
+Authorization: Bearer 5670281c-09be-41de-81a1-52eba8d3d869
+
+{
+"first_name":"Admin Heheh"
+}
+
+
+###
+GET http://localhost:3000/api/contacts
+Content-Type: application/json
+Authorization: Bearer 5670281c-09be-41de-81a1-52eba8d3d869
