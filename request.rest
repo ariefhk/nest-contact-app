@@ -1,0 +1,43 @@
+################## USER ##################
+
+###
+POST http://localhost:3000/api/users/register
+Content-Type: application/json
+
+{
+"username": "admin",
+"name":"Admin",
+"password": "rahasia12345"
+}
+
+###
+POST http://localhost:3000/api/users/login
+Content-Type: application/json
+
+{
+"username": "admin",
+"password": "rahasia12345"
+}
+
+
+###
+GET http://localhost:3000/api/users/current
+Content-Type: application/json
+Authorization: Bearer 5670281c-09be-41de-81a1-52eba8d3d869
+
+
+###
+PATCH  http://localhost:3000/api/users/current
+Content-Type: application/json
+Authorization: Bearer 5670281c-09be-41de-81a1-52eba8d3d869
+
+{
+"name":"Admin"
+}
+
+
+###
+DELETE   http://localhost:3000/api/users/current
+Content-Type: application/json
+Authorization: Bearer ae8a28b8-557a-496e-bfd2-367935faab8b
+
