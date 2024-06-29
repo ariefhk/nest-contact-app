@@ -17,7 +17,7 @@ import {
   CreateContactRequest,
   SearchContactRequest,
   UpdateContactRequest,
-} from 'src/model/contact.mode';
+} from 'src/model/contact.model';
 import { User } from '@prisma/client';
 import { WebResponse } from 'src/model/web.model';
 

@@ -8,7 +8,7 @@ import {
   CreateContactRequest,
   SearchContactRequest,
   UpdateContactRequest,
-} from 'src/model/contact.mode';
+} from 'src/model/contact.model';
 import { Logger } from 'winston';
 import { ContactValidation } from './contact.validation';
 import { WebResponse } from 'src/model/web.model';
